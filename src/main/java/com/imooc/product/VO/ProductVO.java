@@ -3,6 +3,8 @@ package com.imooc.product.VO;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
+import java.util.List;
+
 /**
  * @Author: 鸢一折折纸
  * @Date: 19-7-23 17:04
@@ -15,4 +17,7 @@ public class ProductVO {
     private String categoryName;
     @JsonProperty("type")
     private Integer categoryType;
+    @JsonProperty("foods")
+    List<ProductInfoVO> productInfoVOList;
+
 }
